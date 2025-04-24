@@ -11,6 +11,22 @@ const Container = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
+const Select = styled.select`
+  padding: 0.8rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid ${props => props.theme.colors.primary};
+  background-color: ${props => props.theme.colors.background};
+  color: ${props => props.theme.colors.text};
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: ${props => props.theme.colors.primary};
+  }
+`;
+
 const Button = styled.button`
   background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.text};
@@ -27,15 +43,7 @@ const Button = styled.button`
   }
 `;
 
-const Select = styled.select`
-  background-color: ${props => props.theme.colors.background};
-  color: ${props => props.theme.colors.text};
-  padding: 0.8rem;
-  border-radius: 4px;
-  border: 1px solid ${props => props.theme.colors.primary};
-  margin-right: 1rem;
-  font-size: 1rem;
-`;
+
 
 const TextArea = styled.textarea`
   width: 100%;
